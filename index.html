@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric(Yuhao) Zhang | System Core v1.0</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/terminal.css">
+</head>
+<body>
+    <div id="desktop">
+        <div class="window" id="terminal-window">
+            <div class="window-header">
+                <span class="title">guest@eric-os: ~ </span>
+                <div class="controls">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+            </div>
+            <div class="window-body" id="terminal-output">
+                <p class="line">Initializing eric-OS Kernel...</p>
+                <p class="line">Session started: <span id="session-date"></span></p>
+                <p class="line">Type <span class="highlight">'help'</span> to see available commands.</p>
+                
+                <div class="input-line" id="input-area">
+                    <span class="prompt">guest@eric-os:~$</span>
+                    <input type="text" id="user-input" autofocus autocomplete="off">
+                    <span class="cursor"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="taskbar">
+        <div class="start-btn">SYSTEM</div>
+        <div class="running-apps">
+            </div>
+        <div class="system-time" id="clock">00:00:00</div>
+    </nav>
+
+    <script src="js/main.js"></script>
+    <script src="js/terminal.js"></script>
+</body>
+</html>
